@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Formulario ejer03Formularios</title>
+</head>
+<body>
+	<h1>Formulario para entradas sin validacion</h1><br>
+	<form action="./respuestaFormulario.html" target="_blank" method="get">
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Apellido:</label><br>
+				<input type="txt" name="apellido" autofocus="autofocus">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Contraseña:</label><br>
+				<input type="password" name="clave">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Oculto:</label><br>
+				<input type="hidden" name="oculto" value="valorOculto">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Campo deshabilitado:</label><br>
+				<input type="txt" name="deshabilitado" disabled value="Valor deshabilitado">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold">Campo de solo lectura:</label><br>
+				<input type="txt" name="solo_lectura" value="Valorsololectura" readonly>
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Practica deportes</label><br>
+				<input type="checkbox"  id="deporte" name="deportes" value="si">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Practica musica</label><br>
+				<input type="checkbox" id="musica" name="musica" value="si">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Practica pintura artistica </label><br>
+				<input type="checkbox" id="pintura" name="pintura" value="si">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Sexo</label><br>
+				<label>Masculino</label>&nbsp<input type="radio" id="masculino" name="sexo" value="m" checked="checked">&nbsp
+				<label>Femenino</label>&nbsp<input type="radio" id="femenino" name="sexo" value="f" checked="checked">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Estudios cursados</label><br>
+				<select id="estudios" name="Estudios">
+					<option value="pri">Primario</option>
+					<option value="sec">Secundario</option>
+					<option value="uni">Univeristario</option>
+					<option value="pos">Posgrado</option>
+				</select>
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Fecha y Hora</label><br>
+				<input type="date" name="fecha">&nbsp
+				<input type="time" name="hora">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold">Color</label><br>
+				<input type="Color" name="color">
+		</li>
+		<li style="margin-top: 10px">
+			<input type="submit" value="Enviar Formulario sin validacion">
+		</li>
+		<li style="margin-top: 10px">
+			<input type="reset" value="Reset a valores predetermidados">
+		</li>
+	</form><br>
+	<h1>Formulario par aentradas con validacion</h1><br>
+	<form action="./respuestaFormulario.html">
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Comentario (validacion por required):</label><br>
+				<input type="txt" name="comentario" required="required">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Email con doble validacion (x@x y required):</label><br>
+				<input type="email" name="user-email" required="required" placeholder="texto@texto">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Numero entero limitado(validacion por tipo numerico y cotas):</label><br>
+				<input type="number" name="numero-entero" min="1" max="9">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Numero decimal:</label><br>
+				<input type="number" name="numero-decimal" min="1" max="9" step="0.1">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">URL(validacion por required escribir http://):</label><br>
+				<input type="URL" name="sitio" placeholder="http://xxxxxx" required="required">
+		</li>
+		<li style="marker-top: 10px">
+			<label style="font-weight: bold;">Pattern de validacion:</label><br>
+				<input type="txt" name="mascara" pattern="[a-zA-Z]{3}[1-2]{2}" title="3 letras y dos numeros que sean 1 o 2 solamente">
+		</li>
+		<li style="margin-top: 10px">
+			<label style="font-weight: bold;">Pattern de validacion</label><br>
+				<input type="txt" name="tell" pattern="+[0-9]{12}" placeholder="(+54)1169967177">
+		</li>
+		<li style="margin-top: 10px">
+			<input type="submit" value="Enviar Formulario con validacion">
+		</li>
+		<li style="margin-top: 10px">
+			<input type="reset" value="Reset a valores predetermidados">
+		</li>
+	</form>
+
+</body>
+</html>

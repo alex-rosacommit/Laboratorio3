@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	
+	<head>
+		<title>Ejercicio 01(html basico)</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>
+			MONKEY NUMETALEX
+			<br>
+		</h1>
+		<h2>
+			Bienvenidos!
+			<br>
+		</h2>
+		<h2>
+			Enlaces del Monkey.
+			<br>
+		</h2>
+		<li>
+			<a href="https://www.youtube.com/channel/UC9w8tMjiJKnjC6f2SlqZl0g?view_as=subscriber" target="_blank">
+				Canal de Monkey (Youtube)
+			</a>
+		</li>
+		<li>
+			<a href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwiDyvCV8cLoAhXfE7kGHfHbB5IQPAgH" target="_blank">
+				Acceso a Google
+			</a>
+		</li>
+		<li>
+			<a href="https://espanol.yahoo.com/" target="_blank">
+				Acceso a Yahoo!
+			</a>
+		</li>
+		<br>
+		<br>
+		<hr>
+		<a href="./otroDocumentoMismaVentana.html">
+			Enlace a otra página en la misma pestaña
+		</a>
+		&nbsp;&nbsp;&nbsp;
+		<a href="./otroDocumentoNuevaVentana.html" target="_blank">
+			Enlace a página en una nueva pestaña
+		</a>
+		&nbsp;&nbsp;&nbsp;
+		<a href="#Anclaje">
+			Ancla a otro punto dentro de esta página
+		</a>
+		<hr>
+		<h1>
+			Cuerpo principal del contenido
+		</h1>
+		<p>
+			La etiqueta main en HTML5 una etiqueta semántica. Esto quiere decir que tiene que ver con el significado de lo contenido dentro de ella. Define el contenido principal de una página. Unicamente puede haber una sola etiqueta como esta en todo el documento.
+			El contenido escrito aqui adentro no repite en el resto del sitio (todo lo contrario a los encabezados de pagina, los menues de navegacion y los pie de pagina). Es usado por buscadores para indexar.
+		</p>
+		<h2>
+			Sección etiquetas semánticas estructurales mas importantes
+		</h2>
+		<li>
+			HEADER
+		</li>
+		<li>
+			FOOTER
+		</li>
+		<li>
+			SECTION
+		</li>
+		<li>
+			ARTICLE
+		</li>
+		<li>
+			NAV
+		</li>
+		<li>
+			ADDRESS
+		</li>
+		<p>
+			Las etiquetas semánticas estructurales estan relacionadas directamente con el significado del contenido y no con los estilos ni las posisciones dentro del documento.
+		</p>
+		<h2>
+			Reglas para etiquetas semánticas:
+		</h2>
+		<li>
+			Los distintos tipos de contenidos se pueden asociar a las etiquetas SECTION.
+		</li>
+		<li>
+			Las unidades de contenidos se asocian a las etiquetas ARTICLE. O sea que un SECTION anida multiples ARTICLES.
+		</li>
+		<li>
+			Las etiquetas HEADER y FOOTER pueden ser anidadas dentro de otras etiquetas HEADER o FOOTER. O sea un FOOTER podria anidar otro HEADER y FOOTER.
+		</li>
+		<li>
+			La etiqueta NAV debe ser unica en el documento y corresponde a los elementos de navegacion del documento.
+		</li>
+		<li>
+			Reservar etiqueta h1 para usar dentro de etiquetas top level como main, header o footer.
+		</li>
+		<br><br>
+		<h2>
+			Seccion de imagenes
+		</h2>
+		<p>
+			En esta seccion mostraremos imagenes significativas de nuestro sitio.
+			<br>
+			La siguiente imagen esta insertada en tamaño natural
+			<br>
+			<img src="./LaCalumniaBotticelli.jpg"/>
+			<br>
+			La misma imagen, cuadro La Calumnia de Sandro Botticelli (220px x 153px), con distintos atributos width:
+			<br>
+			De acuerdo a la dimencion de la imagen, solo la primera no pixeleará
+			<br>
+			Cada imagen se colocará al lado de la anterior hasta completar el ancho de la ventana activa (view port)
+			<br>
+			Todas las demas imagenes se verán deformada por haber definido doble parametro de estilo (ancho y alto)
+			<br><br>
+			<!--La misma imagen repetida pero con modificacion de tamaño -->
+			<img alt="LaCalumniaBotticelli" style="width: 100px;height: 500" src="./LaCalumniaBotticelli.jpg">
+			<img alt="LaCalumniaBotticelli" style="width: 200px;height: 500" src="./LaCalumniaBotticelli.jpg">
+			<img alt="LaCalumniaBotticelli" style="width: 300px;height: 500" src="./LaCalumniaBotticelli.jpg">
+			<img alt="LaCalumniaBotticelli" style="width: 400px;height: 500" src="./LaCalumniaBotticelli.jpg">
+		</p>
+		<br><br>
+		<hr>
+		<h2>
+			Seccion de video
+		</h2>
+		<video src="./Santiano.mp4" width="640" height="360" controls></video>
+		<h2>
+			Anclajes
+			<a id="Anclaje">
+			</a>
+		</h2>
+		<p>
+			Punto de anclado
+		</p>
+		<h2>
+			Datos del alumno:
+		</h2>
+		<p>
+			Nombre y apellido: Alex Rosa<br>
+			Legajo: 15-25145<br>
+			email: arosa145@alumnos.frh.utn.edu.ar
+		</p>
+	</body>
+
+
+
+</html>
