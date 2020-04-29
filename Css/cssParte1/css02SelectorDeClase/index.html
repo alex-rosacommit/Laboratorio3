@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css02SelectorDeClase</title>
+	<meta charset="utf-8">
+	<style>
+		span.claseDestacado{
+			font-weight: bold;
+		}
+		p.claseAcotacion{
+			text-align: center;
+			font-size: 18px;
+			color: blue;
+			font-style: italic;
+			border-style: solid;
+			border-color: blue;
+			border-width: thin;
+		}
+		p.claseDestacado{
+			font-weight: bold;
+		}
+		p.claseAyuda{
+			font-style: italic;
+			color: yellow;
+			text-align: center;
+		}
+		td.claseAyuda{
+			width: 600px;
+			height: 50px;
+			border-style: solid;
+			border-color: yellow;
+			border-width: thin;
+		}
+		p.claseContenidoComun{
+
+		}
+		td#idUnico{
+			width: 400px;
+			height: 30px;
+			border-style: solid;
+			border-color: red;
+			border-width: thin;
+		}
+		p#idUnico{
+			font-style: italic;
+			font-size: 12px;
+			color: red;
+			text-align: center;
+		}
+		img.imagenAI50{
+			max-width: 50%;
+		}
+	</style>
+</head>
+<body>
+	<h1>En esta pagina no se deben escribir etiquetas con atributo style</h1>
+	<h2>Todo el estilo se encuentra definido en la etiqueta style, dentro de la etiqueta head del documento</h2>
+	<p>Este parrafo contiene un grupo de palabras delimitado por una etiqueta "span". El comienzo es aqui:
+		<span class="claseDestacado">grupo de palabras destacada con el estilo clase Destacado.</span>
+	</p>
+	<p class="claseAcotacion">Esté oarrafo tiene el estilo definido en la etiqueta style en le header del documento como class="claseAcotacion"
+	</p>
+	<p class="claseDestacado">Esté oarrafo tiene el estilo definido en la etiqueta style en le header del documento como class="claseDestacado"
+	</p>
+		<table>
+			<td class="claseAyuda">
+				<p class="claseAyuda">Esté oarrafo tiene el estilo definido en la etiqueta style en le header del documento como class=claseAyuda</p>
+			</td>
+		</table>
+	<p class="claseContenidoComun">Esté oarrafo tiene el estilo definido en la etiqueta style en le header del documento como class="claseContenidoComun"
+	</p>
+	<table>
+		<td id="idUnico">
+			<p id="idUnico">Parrafo formateado por un estilo particular definido en el style del documento para un parrafo especifico "id=idUnico"</p>
+		</td>
+	</table>
+	<h1>Todas las imagenes con class= "imagenAI50" se encuentran limitadas al 50% del ancho del viewport mas alla de su tamaño real en pixeles
+	</h1>
+	<img class="imagenAI50" src="./programación.jpg">
+
+</body>
+</html>
